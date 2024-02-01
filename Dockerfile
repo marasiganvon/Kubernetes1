@@ -8,8 +8,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the Nginx config
-COPY default /etc/nginx/sites-available/default
-COPY listrace-v1.0/. /usr/share/nginx/html 
+COPY Default /etc/nginx/sites-available/default
+COPY listrace/. /usr/share/nginx/html 
 
 # Expose the port for access
 EXPOSE 80/tcp
